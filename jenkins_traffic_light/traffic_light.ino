@@ -1,5 +1,5 @@
 /*
-  TRaffic Light
+  Traffic Light
   Turns on an LED on if its get an byte input from serial device
  */
  
