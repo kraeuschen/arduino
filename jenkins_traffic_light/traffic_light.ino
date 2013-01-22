@@ -1,8 +1,6 @@
 /*
-  Blink
-  Turns on an LED on for one second, then off for one second, repeatedly.
- 
-  This example code is in the public domain.
+  TRaffic Light
+  Turns on an LED on if its get an byte input from serial device
  */
  
 // Pin 13 has an LED connected on most Arduino boards.
