@@ -16,13 +16,13 @@ void setup() {
   pinMode(ledYellow, OUTPUT);   
   pinMode(ledRed, OUTPUT);   
   Serial.begin(9600);
+  Serial.write("READY");
 }
 
 void reset() {
-  digitalWrite(ledGreen, LOW);    // turn the LED off by making the voltage LOW
-  digitalWrite(ledYellow, LOW);    // turn the LED off by making the voltage LOW
-  digitalWrite(ledRed, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);  
+  digitalWrite(ledGreen, LOW);
+  digitalWrite(ledYellow, LOW);
+  digitalWrite(ledRed, LOW); 
 }
   
 void setFail() {
@@ -46,9 +46,11 @@ void switchLight(char incomingChar) {
     setBuild();
   } else if (incomingChar == 'f') {
     setFail();
+  } else if (incomingChar == 'o') {
+    return;
   }
   
-  delay(1000);
+  delay(500);
 }
 
 // the loop routine runs over and over again forever:
