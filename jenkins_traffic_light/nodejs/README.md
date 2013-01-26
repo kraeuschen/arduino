@@ -7,14 +7,15 @@ of the Arduino will changed.
 # Installation
 
 First you need the 
-(Jenkins Notification Plugin)[https://wiki.jenkins-ci.org/display/JENKINS/Notification+Plugin]
+[Jenkins Notification Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Notification+Plugin)
 on your project with the hostname and udp port.
 
-This plugin sends jsons messages on every build queue change.
+This plugin sends jsons messages on every build change.
 
 The script uses the node-serial lib. but there is an issue
-on the raspberry. So this is the installation guide, if you
-do not compile node on your own.
+on the raspberry pi with raspbian and the default packages.
+
+So this is the installation guide, if you do not compile node on your own.
 
     apt-get install nodejs
     apt-get install npm
